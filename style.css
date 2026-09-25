@@ -83,15 +83,17 @@ body {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
-    font-size: 17px;
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
+    
     color: var(--primary-color);
 }
 
 .header-actions {
+    
     display: flex;
     align-items: center;
     gap: 20px;
@@ -99,6 +101,7 @@ body {
 }
 
 .lang-selector {
+    
     color: var(--text-dark);
     font-weight: 500;
     cursor: pointer;
@@ -108,10 +111,12 @@ body {
 }
 
 .lang-selector i {
+    
     font-size: 12px;
 }
 
 .btn {
+    
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
