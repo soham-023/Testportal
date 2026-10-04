@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langSelector) {
         
         langSelector.addEventListener('click', () => {
+            
             console.log('Language selector clicked!');
             
         });
@@ -22,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
     const testConfigDropdown = document.querySelector('.test-config-dropdown');
-    
     if (testConfigDropdown) 
     {
         testConfigDropdown.addEventListener('click', () => {
