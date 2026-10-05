@@ -20,9 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
     }
+    
 
    
     const testConfigDropdown = document.querySelector('.test-config-dropdown');
+    
     if (testConfigDropdown) 
     {
         testConfigDropdown.addEventListener('click', () => {
