@@ -17,12 +17,12 @@
         <div class="container">
             <div class="logo">
                 
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM17.108 8.163C17.411 7.859 17.411 7.362 17.108 7.058C16.804 6.755 16.307 6.755 16.003 7.058L10.601 12.46L8.093 9.952C7.79 9.649 7.293 9.649 6.989 9.952C6.686 10.256 6.686 10.753 6.989 11.056L10.047 14.114C10.198 14.266 10.395 14.342 10.592 14.342C10.789 14.342 10.986 14.266 11.137 14.114L17.108 8.163Z" fill="#1CAF7D"/>
                 </svg>
                 <span>testportal</span>
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 <a href="#" class="nav-link">Product</a>
                 <a href="#" class="nav-link">Who it's for</a>
                 <a href="#" class="nav-link">Use cases</a>
@@ -30,11 +30,11 @@
                 <a href="#" class="nav-link">Resources</a>
             </nav>
             <div class="header-actions">
-                <div class="lang-selector">
-                    EN <i class="fas fa-chevron-down"></i>
+                <div class="lang-selector" role="button" tabindex="0" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language (current: English)">
+                    EN <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </div>
-                <button class="btn btn-login">Login</button>
-                <button class="btn btn-signup">Sign up</button>
+                <button type="button" class="btn btn-login">Login</button>
+                <button type="button" class="btn btn-signup">Sign up</button>
             </div>
         </div>
     </header>
@@ -44,7 +44,7 @@
         <div class="container hero-content">
             <h1>#1 Exam software tailored<br>for business use</h1>
             <p>Make training and certification exams online. Gain deep insights.<br>Strive for progress.</p>
-            <button class="btn btn-primary">Create your online exam</button>
+            <button type="button" class="btn btn-primary">Create your online exam</button>
         </div>
     </main>
 
@@ -52,10 +52,10 @@
         <div class="bottom-card">
             <div class="card-sidebar">
                 <div class="sidebar-icon active">
-                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
                 </div>
                 <div class="sidebar-icon">
-                    <i class="fas fa-th"></i>
+                    <i class="fas fa-th" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="card-content">
@@ -65,25 +65,25 @@
                         <span class="status-tag">ENDED</span>
                     </div>
                     <div class="card-actions-group">
-                        <span class="action-item"><i class="fas fa-info-circle"></i> Test info</span>
-                        <span class="action-item"><i class="fas fa-eye"></i> Preview</span>
-                        <span class="action-item"><i class="fas fa-print"></i> Print</span>
+                        <span class="action-item"><i class="fas fa-info-circle" aria-hidden="true"></i> Test info</span>
+                        <span class="action-item"><i class="fas fa-eye" aria-hidden="true"></i> Preview</span>
+                        <span class="action-item"><i class="fas fa-print" aria-hidden="true"></i> Print</span>
                         
                     </div>
                 </div>
                 <div class="card-detail-row">
                     <div class="detail-left">
-                        <div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
+                        <div class="nav-arrow" role="button" tabindex="0" aria-label="Back"><i class="fas fa-chevron-left" aria-hidden="true"></i></div>
                         <span class="detail-text">Test sheets review</span>
                     </div>
                     <div class="detail-right">
-                        <span class="respondent-info">Respondent <span class="respondent-name">Lewis Sophie</span> <i class="fas fa-chevron-down"></i></span>
-                        <div class="nav-arrow"><i class="fas fa-chevron-left"></i></div>
-                        <div class="nav-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <span class="respondent-info" role="button" tabindex="0" aria-haspopup="listbox" aria-expanded="false">Respondent <span class="respondent-name">Lewis Sophie</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></span>
+                        <div class="nav-arrow" role="button" tabindex="0" aria-label="Previous respondent"><i class="fas fa-chevron-left" aria-hidden="true"></i></div>
+                        <div class="nav-arrow" role="button" tabindex="0" aria-label="Next respondent"><i class="fas fa-chevron-right" aria-hidden="true"></i></div>
                     </div>
                 </div>
                 <div class="card-footer-row">
-                    <span class="test-config-dropdown">Test configuration <i class="fas fa-chevron-down"></i></span>
+                    <span class="test-config-dropdown" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">Test configuration <i class="fas fa-chevron-down" aria-hidden="true"></i></span>
                 </div>
             </div>
         </div>
