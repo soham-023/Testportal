@@ -1,37 +1,33 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    
-    const langSelector = document.querySelector('.lang-selector');
-    if (langSelector) {
-        
-        langSelector.addEventListener('click', () => {
-            
-            console.log('Language selector clicked!');
-            
-        });
-    }
+    const ACTIVATION_KEYS = ['Enter', ' '];
 
-    const respondentInfo = document.querySelector('.respondent-info');
-    if (respondentInfo) {
-        
-        respondentInfo.addEventListener('click', () => {
-            console.log('Respondent info dropdown clicked!');
-        });
-        
-    }
-    
+    /**
+     * Wire up a dropdown-style control so it works with both mouse and
+     * keyboard (Enter / Space) and keeps aria-expanded in sync.
+     * Missing elements are skipped so the script never throws.
+     */
+    const setupToggle = (selector, label) => {
+        const element = document.querySelector(selector);
+        if (!element) {
+            return;
+        }
 
-   
-    const testConfigDropdown = document.querySelector('.test-config-dropdown');
-    
-    if (testConfigDropdown) 
-    {
-        testConfigDropdown.addEventListener('click', () => {
-            console.log('Test configuration dropdown clicked!');
-           
-        });
-        
-    }
+        const toggle = () => {
+            const expanded = element.getAttribute('aria-expanded') === 'true';
+            element.setAttribute('aria-expanded', String(!expanded));
+            console.log(`${label} ${expanded ? 'closed' : 'opened'}`);
+        };
 
+        element.addEventListener('click', toggle);
+        element.addEventListener('keydown', (event) => {
+            if (ACTIVATION_KEYS.includes(event.key)) {
+                event.preventDefault();
+                toggle();
+            }
+        });
+    };
+
+    setupToggle('.lang-selector', 'Language selector');
+    setupToggle('.respondent-info', 'Respondent dropdown');
+    setupToggle('.test-config-dropdown', 'Test configuration dropdown');
 });
